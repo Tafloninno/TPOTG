@@ -76,6 +76,48 @@ nav {
   .active {
     left: 0;
   }
+  .homepage {
+    background-image: url('/assets/images/homepage.jpg');
+    background-size: cover;
+    background-position: center; 
+    height: 80vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .homepage-container {
+    text-align: center; 
+    color: #fff; /* Makes text color white for contrast */
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    padding: 20px; /* Adds spacing inside the container */
+    border-radius: 10px; /* Rounds the corners slightly */
+  }
+  
+  .homepage h1 {
+    font-size: 3rem; /* Adjust heading size */
+    margin-bottom: 20px; /* Adds space below the heading */
+  }
+  
+  .homepage p {
+    font-size: 1.5rem; /* Adjust paragraph size */
+    margin-bottom: 30px; /* Adds space below the paragraph */
+  }
+  
+  .join-btn {
+    background-color: #007bff; /* Button color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button size */
+    font-size: 1.2rem; /* Button text size */
+    border: none; /* Removes border */
+    border-radius: 5px; /* Rounds the corners */
+    cursor: pointer; /* Adds a pointer cursor */
+    transition: background-color 0.3s ease; /* Adds smooth hover effect */
+  }
+  
+  .join-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
   @media (min-width: 768px){
     nav {
         width: 100%;
