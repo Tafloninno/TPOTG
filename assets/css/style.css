@@ -218,7 +218,92 @@ nav {
 .values button:hover {
   background-color: #0056b3;
 }
-
+.sermons {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .sermons-container h2 {
+    font-size: 1.5rem;
+    color: #444;
+  }
+  
+  .sermons-container h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #007bff;
+  }
+  
+  .sermon-schedule {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .sermon-schedule img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .schedule-details {
+    max-width: 400px;
+    text-align: left;
+    color: #333;
+  }
+  
+  .schedule-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .schedule-details blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #007bff;
+    padding-left: 10px;
+    margin: 20px 0;
+  }
+  
+  .sermon-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .sermon-card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .sermon-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .sermon-card iframe {
+    width: 100%;
+    height: 180px;
+  }
+  
+  .sermon-card p {
+    padding: 15px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  
 @media (min-width: 768px) {
   nav {
     padding: 0 114px;
@@ -254,4 +339,29 @@ nav {
     list-style: none;
     gap: 20px;
   }
+  .sermon-schedule {
+    flex-direction: row;
+  }
+
+  .schedule-details {
+    text-align: center;
+  }
+
+  .sermon-schedule {
+    flex-direction: row;
+  }
+
+  .schedule-details {
+    text-align: center;
+  }
+
+  /* .sermon-cards {
+    flex-direction: column;
+  }
+
+  .sermon-card {
+    width: 90%;
+  } */
+
+
 }
